@@ -2,6 +2,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 20;
 }
+
 .landing{
   position: absolute;
   width: 100%;
@@ -11,15 +12,21 @@
   background-image: url(img/landingBk.jpg);
 }
 
-
 .heading{
+  line-height: 20px;
   padding-top: 2px;
-  color: white;
+  color: lightgrey;
 }
 
 .heading h1{
   text-transform: uppercase;
+  color:orange;
 }
+
+.heading h4{
+
+}
+
 li{
   float: right;
   list-style-type: none;
@@ -30,41 +37,74 @@ li a{
     display: inline-block;
     text-decoration: none;
     margin-right: 40px;
-    padding: 5px;
-    color: white;
+    padding: 7px;
+    color: lightgrey;
     
     }
 
 li a:hover{
-  border: 1px solid white;
+  border: 2px solid orange;
 }
 
 li a:active{
-  border: 1px solid white;
+  border: 1px solid orange;
 }
 
 /* Planets */
     #p7{
       position: absolute;
       top: 40%;
+      cursor: pointer;
     }
     #p4{
       position: absolute;
       left: 30%;
       top: 20%;
+      cursor: pointer;
     }
     #p5{
       position: absolute;
       left: 40%;
       top: 70%;
+      cursor: pointer;
     }
     #p6{
       position: absolute;
       left: 60%;
       top: 30%;
+      cursor: pointer;
     }
     #p8{
       position: absolute;
       left: 80%;
-      top: 60%;
+      top: 50%;
+      cursor: pointer;
     }
+
+    .line-1{
+      color: lightgray;
+      position: relative;
+      top: 40%;  
+      width: 24em;
+      margin: 0 auto;
+      border-right: 2px solid orange;
+      font-size: 250%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);    
+  }
+  
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 13em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: orange;}
+    to{border-right-color: transparent;}
+  }
