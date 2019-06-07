@@ -19,4 +19,6 @@ $(function(){
     $('#type').delay(7000).fadeOut('slow'); //Typewriter animation fadeout delay
     $('.planet').delay(7000).show(3000);    //After delay the planets will be visible
 
+
+    
   });

@@ -104,3 +104,55 @@ li a:active{
     from{border-right-color: orange;}
     to{border-right-color: transparent;}
   }
+    
+  /*Skills section*/
+  .skills{
+    position: absolute;
+    margin: 0;
+    height: 700px;
+    width: 98.9vw;
+    top: 100vh;
+    left: 0;
+    background-image: url(img/gamesBk.jpg);
+  }
+
+  .skills h1{
+    position: absolute;
+    color: white;
+    letter-spacing: 10px; 
+    margin-left: 20px;
+  }
+  :root {
+    --width: 300px;
+    --height: 100px;
+    --bottom-color: orange;
+  }
+  
+  .separator {
+    width: var(--width);
+    height: var(--height);
+    position: -ms-page;
+  }
+  
+  .separator::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--top-color);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+  }
+  
+  .separator::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--bottom-color);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  }
+
+
+  
+
+  
